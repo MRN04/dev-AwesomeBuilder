@@ -1,3 +1,54 @@
-h1 {
-    color: blue;
+.first-screen {
+    svg {
+        .building {
+            stroke-opacity: 0;
+            fill-opacity: 0;
+            transition: .3s;
+
+            &:hover {
+                stroke-opacity: 1;
+                fill-opacity: .3;
+            }
+            &.sold {
+                stroke: rgb(213, 26, 26);
+                fill: rgb(213, 26, 26);
+                cursor: no-drop;
+            }
+        }
+
+    }
+}
+
+.information {
+    max-width: 1420px;
+    margin: 0 auto;
+    color: #fff;
+    background: #121212;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    &-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+}
+
+.list-item {
+    display: flex;
+    min-width: 235px;
+    flex-direction: column;
+
+    b {
+        font-size: 18px;
+    }
 }
