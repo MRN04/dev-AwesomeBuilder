@@ -1,0 +1,17 @@
+.page-building {
+    .container {
+        svg {
+            .floor {
+                fill-opacity: 0;
+                stroke-opacity: 0;
+                transition: .3s;
+
+                &:hover {
+                    fill-opacity: .3;
+                    stroke-opacity: 1;
+
+                }
+            }
+        }
+    }
+}

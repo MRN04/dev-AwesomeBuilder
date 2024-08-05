@@ -56,6 +56,18 @@ header nav a {
   color: rgb(140, 140, 140);
   font-size: 20px;
 }
+header .btn-row {
+  display: flex;
+  gap: 20px;
+}
+header .btn-row button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  min-width: 100px;
+  background: rgb(20, 210, 24);
+  cursor: pointer;
+}
 
 .first-screen svg .building {
   stroke-opacity: 0;
@@ -99,6 +111,58 @@ header nav a {
   flex-direction: column;
 }
 .list-item b {
+  font-size: 18px;
+}
+
+.page-building .container svg .floor {
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  transition: 0.3s;
+}
+.page-building .container svg .floor:hover {
+  fill-opacity: 0.3;
+  stroke-opacity: 1;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.modal.show {
+  display: flex;
+}
+.modal .modal-body {
+  max-width: 400px;
+  background: #1d1d1d;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+}
+.modal .modal-body .close-btn {
+  max-width: 20px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.modal .modal-body .close-btn img {
+  max-width: 20px;
+  height: 20px;
+}
+.modal .modal-body h5 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.modal .modal-body p {
   font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */

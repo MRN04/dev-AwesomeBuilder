@@ -1,0 +1,48 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgb(0 0 0 / 40%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+
+    &.show {
+        display: flex;
+    }
+    
+    .modal-body {
+        max-width: 400px;
+        background: #1d1d1d;
+        border: 1px solid;
+        border-radius: 20px;
+        padding: 40px;
+        position: relative;
+
+        .close-btn {
+            max-width: 20px;
+            height: 20px;
+            background: transparent;
+            border: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+
+            img {
+                max-width: 20px;
+                height: 20px;
+            }
+        } 
+
+        h5 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+    
+}

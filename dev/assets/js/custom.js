@@ -21,6 +21,7 @@ function calcInfo() {
             el.addEventListener('click', (event)=> {
                 event.preventDefault();
             })
+            el.setAttribute("data-modal-triger", "sold")
         }
         
     });
